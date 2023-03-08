@@ -1,0 +1,120 @@
+:root {
+    /* Primary */
+    --Soft-orange:  hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+    /* Neutral */
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+body {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    background-color: var(--Off-white);
+}
+
+
+/* Start Navbar Section */
+.navbar {
+    background-color: var(--Off-white);
+}
+.navbar .offcanvas-header .btn-close {
+    font-size: 25px;
+}
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+.navbar .navbar-nav .nav-link {
+    font-size: 22px;
+    margin-left: 20px;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color:var(--Soft-red)
+}
+/* End Navbar Section */
+
+
+
+
+/* Start New Section */
+.row-news .section-one .card {
+    background-color: var(--Off-white);
+}
+@media (min-width: 992px){
+    .news-card-body {
+        height: 100%;
+    }
+}
+.row-news .section-one .main-card {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+.row-news .section-one .main-card .button-cover {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: end;
+    align-content: center;
+}
+.row-news .section-one .main-card button {
+    width: 60%;
+    padding: 13px 0;
+    background-color: var(--Soft-red);
+    color: var(--Off-white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.row-news .section-one .main-card button:hover {
+    background-color: var(--Very-dark-blue);
+}
+@media (max-width: 768px) {
+    .row-news .section-one .main-card button {
+        font-size: 13px;
+    }
+}
+.row-news .card-header:first-child {
+    color: var(--Soft-orange);
+}
+.row-news .section-two .card-body h5:hover {
+    cursor: pointer;
+    color: var(--Soft-orange);
+}
+/* End New Section */
+
+
+
+
+/* Start Popular Section */
+.row-popular .card {
+    background-color: var(--Off-white);
+    margin-bottom: 20px;
+}
+
+.row-popular .card .card-number {
+    color: var(--Grayish-blue)
+}
+.row-popular .card .card-title {
+    font-weight: bold;
+    color: var(--Very-dark-blue);
+}
+.row-popular .card .card-title:hover {
+    color: var(--Soft-red)
+}
+/* End Popular Section */
+
+
+
+
+/* Start Attribution Section */
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    color: hsl(228, 45%, 44%);
+}
+/* End Attribution Section  */
